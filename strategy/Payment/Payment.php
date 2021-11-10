@@ -48,6 +48,6 @@ class Payment
             default:
                 $payment = new PayMethod_1();
         }
-        $payment->pay($this->amount);
+        return $payment->pay($this->amount);
     }
 }
