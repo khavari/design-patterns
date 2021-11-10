@@ -3,8 +3,8 @@
 namespace strategy\Payment;
 require_once 'Payment.php';
 
-$payment = new Payment(1200);
-$payment->setMethod(1);
+$payment = new Payment(1200,2);
+$payment->setMethod(2);
 $result = $payment->payAmount();
 var_dump($result);
 
